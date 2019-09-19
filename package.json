@@ -28,7 +28,10 @@
         "node-red-node-msgpack": "*",
         "node-red-node-base64": "*",
         "node-red-node-suncalc": "*",
-        "node-red-node-random": "*"
+        "node-red-node-random": "*",
+        "node-red-contrib-home-assistant-websocket": "^0.15.0",
+        "node-red-dashboard": "^2.16.2",
+        "node-red-contrib-msg-resend": "0.0.7"
     },
     "engines": {
         "node": "8.*.*"
