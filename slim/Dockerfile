@@ -1,6 +1,9 @@
 ARG NODE_VERSION=10
 FROM node:${NODE_VERSION}-alpine
 
+# add tzdata for setting timezone properly
+RUN apk add tzdata
+
 # Home directory for Node-RED application source code.
 RUN mkdir -p /usr/src/node-red
 
