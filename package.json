@@ -31,8 +31,10 @@
         "node-red-node-random": "*",
         "node-red-contrib-home-assistant-websocket": "^0.15.0",
         "node-red-dashboard": "^2.16.2",
-	"node-red-contrib-cron-plus": "~0.3.0",
-        "node-red-contrib-msg-resend": "0.0.7"
+	    "node-red-contrib-cron-plus": "~0.3.0",
+        "node-red-contrib-msg-resend": "0.0.7",
+        "node-red-contrib-bigtimer": "^2.2.5"
+        
     },
     "engines": {
         "node": "8.*.*"
