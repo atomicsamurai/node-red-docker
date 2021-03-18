@@ -1,6 +1,8 @@
 ARG NODE_VERSION=10
 FROM node:${NODE_VERSION}-alpine
 
+RUN deluser --remove-home node
+
 # add tzdata for setting timezone properly
 RUN apk add tzdata
 
@@ -19,6 +21,7 @@ RUN adduser -h /usr/src/node-red -D -H node-red \
 
 USER node-red
 
+# RUN id
 # package.json contains Node-RED NPM module and node dependencies
 COPY package.json /usr/src/node-red/
 RUN npm install
