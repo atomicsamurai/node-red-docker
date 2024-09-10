@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/node-red/node-red-docker.git"
     },
-    "private": true,
+    "main": "node_modules/node-red/red/red.js",
     "scripts": {
         "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
         "debug": "node --inspect=0.0.0.0:9229 $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
@@ -29,16 +29,7 @@
         }
     ],
     "dependencies": {
-        "node-red": "4.0.2",
-        "node-red-node-msgpack": "*",
-        "node-red-node-base64": "*",
-        "node-red-node-suncalc": "*",
-        "node-red-node-random": "*",
-        "node-red-contrib-home-assistant-websocket": "^0.71.0",
-        "node-red-dashboard": "^3.6.5",
-	"node-red-contrib-cron-plus": "~2.1.0",
-        "node-red-contrib-msg-resend": "1.0.0",
-        "node-red-contrib-bigtimer": "^2.8.6"
+        "node-red": "4.0.2"
     },
     "engines": {
         "node": ">=18"
